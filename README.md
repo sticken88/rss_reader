@@ -9,7 +9,6 @@ This project is a RSS feed reader implemented in python with kivy to create the 
 - add more feeds
 - adding an initial page with feeds grouped in categories
 - multithreading (?)
--
 
 ### References
 - kivi: http://kivy.org/docs/gettingstarted/intro.html
