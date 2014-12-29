@@ -29,6 +29,15 @@ Factory.register('ListItemButton', cls=ListItemButton)
 #        index property in the template. Same TODO in list_cascade_images.py.
 
 Builder.load_file('app_layout.kv')
+#Builder.load_string('''
+#[CustomListItem@SelectableView+BoxLayout]:
+#    size_hint_y: ctx.size_hint_y
+#    height: ctx.height
+#    ListItemButton:
+#        text: ctx.text
+#        is_selected: ctx.is_selected
+#''')
+
 
 class MainView(GridLayout):
     '''Implementation of a list view with a kv template used for the list
