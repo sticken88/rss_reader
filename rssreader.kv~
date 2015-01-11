@@ -1,0 +1,5 @@
+#:kivy 1.0.9
+
+<RssReader>:    
+    ListItemButton:
+        on_press: my_callback()

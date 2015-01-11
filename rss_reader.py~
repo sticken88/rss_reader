@@ -1,0 +1,26 @@
+from kivy.app import App
+from kivy.uix.widget import Widget
+
+# to parse the rss feed
+import feedparser
+
+class RssReader(Widget): # PongGame
+
+    def my_callback(self):
+       print "Button pressed!!"
+    pass
+
+
+class RssReaderApp(App): # PongApp
+   url_to_read = "http://rss.cnn.com/rss/cnn_topstories.rss"
+   content = feedparser.parse(url_to_read)
+
+    for item in content["items"]:
+       print item["title"]
+
+    def build(self):
+        return RssReader()
+
+
+if __name__ == '__main__':
+    RssReaderApp().run()
