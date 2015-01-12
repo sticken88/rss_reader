@@ -3,5 +3,5 @@
     height: ctx.height
     ListItemButton:
         text: ctx.text
-        on_press: ctx.cb
+        url: ctx.url
         is_selected: ctx.is_selected
